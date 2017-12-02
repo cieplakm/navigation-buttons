@@ -45,7 +45,7 @@ public class NavigationButtons extends LinearLayout implements INavigationButton
         init();
     }
 
-    public void init() {
+    private void init() {
         inflateRootView();
         bindViews();
         setupListenrs();
@@ -71,21 +71,24 @@ public class NavigationButtons extends LinearLayout implements INavigationButton
         btnLeft.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                onClicksListener.onLeftClick();
+                if (onClicksListener !=null)
+                    onClicksListener.onLeftClick();
             }
         });
 
         btnRight.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                onClicksListener.onRightClick();
+                if (onClicksListener !=null)
+                    onClicksListener.onRightClick();
             }
         });
 
         tvTitle.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                onClicksListener.onTitleClick();
+                if (onClicksListener !=null)
+                    onClicksListener.onTitleClick();
             }
         });
     }
