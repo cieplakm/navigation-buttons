@@ -20,7 +20,7 @@
 
         <TextView
             android:background="@drawable/border"
-            android:id="@+id/more_to_show_more_salary"
+            android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -28,7 +28,7 @@
             android:gravity="center"
             android:paddingBottom="3dp"
             android:paddingTop="3dp"
-            android:text="Szczegóły..."
+            android:text="Title"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp" />
 
